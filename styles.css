@@ -1,0 +1,167 @@
+body {
+  background-image: linear-gradient(to top left, #753682 10%, #bf2e34 70%);
+  width: 100%;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  height: 87vh;
+}
+
+.player {
+  width: 70vh;
+  text-align: center;
+  padding-top: 30px;
+  box-shadow: 3px 3px 6px 5px #c55c5f;
+  text-transform: uppercase;
+  color: #2e0416;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+.player-1 {
+  background-color: #d19193;
+  opacity: 0.9;
+}
+
+.player-2 {
+  background-color: #d19193;
+  opacity: 0.9;
+}
+
+.name {
+  font-size: 28px;
+}
+
+.score {
+  font-size: 54px;
+  color: #2e0416;
+}
+
+.current {
+  background-color: #552ebf;
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+  margin-top: 110px;
+  font-size: 18px;
+  padding: 1px 60px;
+  color: #14010a;
+  border-radius: 5px;
+}
+
+.current-score {
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+.dice {
+  position: absolute;
+  margin-left: 620px;
+  margin-top: 160px;
+  width: 100px;
+  height: 100px;
+  z-index: 5;
+}
+
+.btn {
+  font-size: 16px;
+  border-radius: 50px;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  background-color: rgb(247, 216, 250);
+  position: relative;
+  z-index: 5;
+  font-family: "Nunito", sans-serif;
+}
+
+.btn:hover {
+  animation: btn-hover forwards 0.1s;
+}
+
+@keyframes btn-hover {
+  100% {
+    background-color: #c02127;
+    color: cornsilk;
+  }
+}
+
+.btn:active {
+  transform: translateX(-1%);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.new-game {
+  position: absolute;
+  margin-left: 610px;
+  margin-top: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.new-game:hover {
+  transition: 0.1s;
+}
+
+.roll-dice {
+  position: absolute;
+  margin-left: 610px;
+  margin-top: 320px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.hold-play {
+  position: absolute;
+  margin-left: 630px;
+  margin-top: 395px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.player-active {
+  background: linear-gradient(to bottom right, #7e3e40 80%, #d19193 100%);
+  /* #d19193 */
+  /* background-color: #8f4f52; */
+}
+
+.player-active .name {
+  font-size: 35px;
+}
+
+.player-active .score {
+  font-size: 65px;
+}
+
+.player-active .current {
+  opacity: 1;
+  margin-top: 72px;
+}
+
+.player-winner {
+  background-color: #131010;
+}
+
+.player-winner .name {
+  font-size: 30px;
+  color: #c7365f;
+}
+
+.player-winner .score {
+  color: #c7365f;
+}
+
+.player-winner .current {
+  background-color: #c7365f;
+  color: rgb(255, 255, 255);
+}
+.hidden {
+  display: none;
+}
