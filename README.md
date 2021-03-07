@@ -1,0 +1,1 @@
+Created this while learning the basics of the DOM. Well, just a simple multiplayer dice game where you roll and hold the dice. If you roll a 1, you loose your current score and switch up to the other player but if you hold before getting the final score, then you save your current score. Well, it sounds a little wierd but i promise it's not😄
